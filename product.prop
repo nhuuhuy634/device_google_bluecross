@@ -114,6 +114,3 @@ ro.input.video_enabled=false
 
 # RIL
 ro.telephony.block_binder_thread_on_incoming_calls=false
-
-# Spark
-ro.spark.maintainer=26.pluvieux
