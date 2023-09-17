@@ -39,6 +39,10 @@ TARGET_BOARD_COMMON_PATH := device/google/crosshatch/sdm845
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Init
+DEVICE_PATH := device/google/crosshatch
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_crosshatch
+
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
