@@ -911,3 +911,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
+
+#Add backpressure propagation in SF 
+PRODUCT_ODM_PROPERTIES += \
+    debug.sf.disable_client_composition_cache=0
