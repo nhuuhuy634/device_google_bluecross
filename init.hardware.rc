@@ -851,3 +851,7 @@ on property:ota.warm_reset=1
 
 on property:ota.warm_reset=0
     write /sys/module/msm_poweroff/parameters/warm_reset 0
+
+
+ # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
